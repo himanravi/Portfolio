@@ -61,7 +61,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #f04;
+  color: gray;
 }
 
 header, .container {
@@ -352,12 +352,6 @@ form btn2{
     cursor: pointer;
 }
  
-/* Hide icons by default (for desktop/laptop) */
-nav .fa-bars,
-nav .fa-square-xmark {
-    display: none;
-}
-
 
 
 
@@ -470,8 +464,77 @@ nav .fa-square-xmark {
     }
 
 }
+@media only screen and (min-width: 601px) {
+    #menu-icon,
+    #close-icon {
+        display: none !important;
+    }
+}
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
 }
+/* Always hidden by default */
+#close-icon {
+    display: none;
+}
+
+/* When menu is open (class added by JS), swap icons */
+.menu-open #menu-icon {
+    display: none;
+}
+.menu-open #close-icon {
+    display: block;
+}
+
+/* Mobile-only layout for icons */
+@media only screen and (max-width: 600px) {
+    #menu-icons {
+        position: fixed;     /* Changed from absolute */
+        top: 20px;
+        left: 25px;
+        z-index: 1000;       /* High z-index to keep it above everything */
+    }
+
+    #menu-icon, #close-icon {
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+}
+/* Hide close icon by default */
+#close-icon {
+    display: none;
+}
+
+/* Toggle visibility on menu open */
+.menu-open #menu-icon {
+    display: none;
+}
+.menu-open #close-icon {
+    display: block;
+}
+
+/* Hamburger icon (menu icon) at top-right */
+#menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 1000;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#close-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+

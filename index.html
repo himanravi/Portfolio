@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
@@ -7,20 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a72df3a250.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul id="sidemenu">
+                    <i class="fa-solid fa-xmark" id="close-icon" onclick="closemenu()"></i>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>    
-                    <li><a href="#contact">Contact</a></li> 
-                    <i class="fa-solid fa-square-xmark" id="close-icon" onclick="closemenu()"></i>         
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <i class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></i>
+
+                <div class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></div>
+
             </nav>
             <div class="header-flex">
                 <div class="header-text">
@@ -42,7 +46,11 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub">About Me</h1>
-                    <p>Hi, I’m Himan Ravi Shetty, a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I’m currently expanding my skills by learning Java, and I have a growing interest in data analysis. I enjoy solving problems and continuously learning new technologies to improve my development and analytical skills. My goal is to build dynamic, user-friendly websites while also understanding data-driven decision-making.</p>
+                    <p>Hi, I’m Himan Ravi Shetty, a passionate web developer with a strong foundation in HTML, CSS, and
+                        JavaScript. I’m currently expanding my skills by learning Java, and I have a growing interest in
+                        data analysis. I enjoy solving problems and continuously learning new technologies to improve my
+                        development and analytical skills. My goal is to build dynamic, user-friendly websites while
+                        also understanding data-driven decision-making.</p>
                     <div class="tab">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
@@ -64,7 +72,7 @@
                         <ul>
                             <li><span>2020</span><br>SSLC from HMM Kundapur</li>
                             <li><span>2021-2022</span><br>PU from Viveka Kota</li>
-                            <li><span>2023-Current</span><br>BE from St Joseph  Mangalore</li>
+                            <li><span>2023-Current</span><br>BE from St Joseph Mangalore</li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +86,10 @@
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
                     <h2>Web Developer</h2>
-                    <p>I’ve had the opportunity to intern as a Web Developer at Internpe, where I worked on a variety of tasks that significantly enhanced my knowledge in the field of web development. During my internship, I gained hands-on experience with front-end and back-end technologies, improved my problem-solving skills, and deepened my understanding of web development practices.</p>
+                    <p>I’ve had the opportunity to intern as a Web Developer at Internpe, where I worked on a variety of
+                        tasks that significantly enhanced my knowledge in the field of web development. During my
+                        internship, I gained hands-on experience with front-end and back-end technologies, improved my
+                        problem-solving skills, and deepened my understanding of web development practices.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -90,28 +101,34 @@
             <h1 class="sub">My Work</h1>
             <div class="worklist">
                 <div class="work">
-                        <img src="images/work-1.png">
-                        <div class="layer">
-                            <h2>Employee Management System</h2>
-                            <p>The Employee Management System is a Python-based application that allows users to store, search, create, update, and delete employee details. It uses MySQL for data storage and demonstrates full-stack development skills with both front-end and back-end integration.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h2>Employee Management System</h2>
+                        <p>The Employee Management System is a Python-based application that allows users to store,
+                            search, create, update, and delete employee details. It uses MySQL for data storage and
+                            demonstrates full-stack development skills with both front-end and back-end integration.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
                 <div class="work">
-                        <img src="images/work-2.png">
-                        <div class="layer">
-                            <h2>Budget Buddy</h2>
-                            <p>The Employee Management System is a Python-based application that allows users to store, search, create, update, and delete employee details. It uses MySQL for data storage and demonstrates full-stack development skills with both front-end and back-end integration.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h2>Budget Buddy</h2>
+                        <p>The Employee Management System is a Python-based application that allows users to store,
+                            search, create, update, and delete employee details. It uses MySQL for data storage and
+                            demonstrates full-stack development skills with both front-end and back-end integration.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
                 <div class="work">
-                        <img src="images/work-3.png">
-                        <div class="layer">
-                            <h2>Employee Management System</h2>
-                            <p>The Employee Management System is a Python-based application that allows users to store, search, create, update, and delete employee details. It uses MySQL for data storage and demonstrates full-stack development skills with both front-end and back-end integration.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h2>Employee Management System</h2>
+                        <p>The Employee Management System is a Python-based application that allows users to store,
+                            search, create, update, and delete employee details. It uses MySQL for data storage and
+                            demonstrates full-stack development skills with both front-end and back-end integration.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
             <a href="#" class="btn">See more</a>
@@ -127,9 +144,11 @@
                     <p><i class="fa-solid fa-phone"></i>8197227567</p>
                     <div class="social-icon">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/himan_shetty/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.instagram.com/himan_shetty/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/himan-ravi-shetty-052a4a325?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/himan-ravi-shetty-052a4a325?originalSubdomain=in"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
                 </div>
@@ -148,11 +167,11 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link")
@@ -161,37 +180,52 @@
     </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
-        var menuIcon = document.getElementById("menu-icon");     // Get the hamburger icon
-        var closeIcon = document.getElementById("close-icon");   // Get the close icon
+        var body = document.body;
 
         function openmenu() {
             sidemenu.style.right = "0";
-            menuIcon.style.display = "none";     // Hide hamburger menu
-            closeIcon.style.display = "block";   // Show close icon
+            body.classList.add("menu-open");
         }
 
         function closemenu() {
             sidemenu.style.right = "-200px";
-            menuIcon.style.display = "block";    // Show hamburger menu
-            closeIcon.style.display = "none";    // Hide close icon
+            body.classList.remove("menu-open");
         }
     </script>
+
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwaFFMMR8Ws59tOBqPIGS0_0KWBBlBXDeYE29CGg-eEbYyz-bUMjk6cgtWyAcGrCEQ9bQ/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("msg")
+        const msg = document.getElementById("msg")
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+        const menuIcon = document.getElementById("menu-icon");
+        const closeIcon = document.getElementById("close-icon");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            document.body.classList.add("menu-open");
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+            document.body.classList.remove("menu-open");
+        }
+    </script>
 </body>
+
 </html>
