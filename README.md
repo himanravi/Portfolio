@@ -4,7 +4,7 @@ Hi 👋, I'm **Himan Ravi Shetty**, a passionate Web Developer and tech enthusia
 
 ## 🌐 Website Preview
 
-[View Live Site](https://himanravi.github.io/Portfolio/)
+[View Live Site](https://himan-new-portfolio.netlify.app/)
 
 ---
 
